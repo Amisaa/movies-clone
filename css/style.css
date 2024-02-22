@@ -1,0 +1,54 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-item a {
+    display: block; /* Change the display to block-level */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Ensure images in grid items fill the container */
+.grid-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+/* Define grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five columns with equal width */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Style grid items */
+.grid-item {
+    width: 100%; /* Ensure each grid item takes up the full width of its column */
+    padding: 10px; /* Add padding to space out the grid items */
+    text-align: center; /* Center-align content */
+}
+
+/* CSS to change color of movie title on hover */
+.grid-item:hover p {
+    color: red; /* Change color to red when hovering over the grid item */
+}
+.title-box{
+    display: flex; /* Display as block-level element */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 10px 20px; /* Add padding for better clickability */
+    text-decoration: none; /* Remove default underline */
+    background-color: #f0f0f0; /* Background color of clickable area */
+    border: 1px solid #ccc; /* Border for clickable area */
+    border-radius: 5px;
+   align-items: center ; /* Add border radius for rounded corners */
+}
+.title-box-text{
+    margin-left: -10px; 
+}
+
+.title-box:hover{
+    background-color: lightblue;
+}
